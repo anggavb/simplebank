@@ -17,4 +17,7 @@ migrate-force:
 sqlc:
 	sqlc generate
 
-.PHONY: migrate-create migrate-up migrate-down migrate-force sqlc
+test:
+	go test -v ./...
+
+.PHONY: migrate-create migrate-up migrate-down migrate-force sqlc test
