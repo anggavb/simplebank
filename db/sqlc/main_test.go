@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/jackc/pgx/v5"
+	"github.com/jackc/pgx/v5/pgxpool"
 )
 
 const (
@@ -19,15 +19,16 @@ const (
 )
 
 var testQueries *Queries
+var testDB *pgxpool.Pool
 
 func TestMain(m *testing.M) {
-	log.Println(buildDBURL())
-	conn, err := pgx.Connect(context.Background(), buildDBURL())
+	var err error
+	testDB, err = pgxpool.New(context.Background(), buildDBURL())
 	if err != nil {
 		log.Fatal("cannot connect to db:", err.Error())
 	}
 
-	testQueries = New(conn)
+	testQueries = New(testDB)
 	os.Exit(m.Run())
 }
 
