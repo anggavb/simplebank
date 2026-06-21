@@ -1,4 +1,5 @@
-DB_URL=postgres://grpc_bank:secret@localhost:5432/grpc_bank?sslmode=disable
+include ./.env
+
 MIGRATION_PATH=db/migration
 
 migrate-create:
