@@ -20,4 +20,7 @@ sqlc:
 test:
 	go test -v ./...
 
-.PHONY: migrate-create migrate-up migrate-down migrate-force sqlc test
+server:
+	@go run main.go
+
+.PHONY: migrate-create migrate-up migrate-down migrate-force sqlc test server
