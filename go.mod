@@ -1,4 +1,4 @@
-module github.com/backend-grpc
+module github.com/anggavb/simplebank
 
 go 1.26.3
 

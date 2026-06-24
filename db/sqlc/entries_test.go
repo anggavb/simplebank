@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/backend-grpc/util"
+	"github.com/anggavb/simplebank/util"
 	"github.com/go-openapi/testify/v2/require"
 )
 

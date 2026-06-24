@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	db "github.com/backend-grpc/db/sqlc"
+	db "github.com/anggavb/simplebank/db/sqlc"
 	"github.com/gin-gonic/gin"
 	"github.com/jackc/pgx/v5"
 )

@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/backend-grpc/util"
+	"github.com/anggavb/simplebank/util"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 

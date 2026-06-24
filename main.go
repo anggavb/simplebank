@@ -4,9 +4,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/backend-grpc/api"
-	db "github.com/backend-grpc/db/sqlc"
-	"github.com/backend-grpc/util"
+	"github.com/anggavb/simplebank/api"
+	db "github.com/anggavb/simplebank/db/sqlc"
+	"github.com/anggavb/simplebank/util"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
